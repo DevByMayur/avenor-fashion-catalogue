@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/icons/avenor-favicon.png">
+
+    <title>AVENOR | Contemporary Luxury</title>
+
+    <meta name="description" content="Discover AVENOR, where contemporary design meets timeless elegance.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT -->
+    <div class="announcement-bar">
+        Complimentary shipping on orders above $150
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="nav-left">
+                <a href="index.html" class="active">Home</a>
+                <a href="collections.html">Collections</a>
+            </div>
+
+            <a href="index.html" class="logo">AVENOR</a>
+
+            <div class="nav-right">
+
+                <a href="#our-story">Our Story</a>
+
+                <button class="bag-button" id="cartButton">
+                    Shopping Bag (<span id="cartCount">0</span>)
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero-section">
+
+            <img
+                src="assets/images/hero-banner.webp"
+                alt="AVENOR contemporary luxury fashion campaign"
+                class="hero-image"
+                loading="eager"
+                fetchpriority="high"
+            >
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">THE ART OF MODERN ELEGANCE</p>
+
+                <h1>
+                    Elegance in<br>
+                    Every Detail.
+                </h1>
+
+                <p class="hero-description">
+                    Discover a modern perspective on timeless fashion.
+                    Thoughtfully designed for those who define their own style.
+                </p>
+
+                <a href="collections.html" class="primary-button">
+                    Explore Collections
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- BRAND INTRODUCTION -->
+        <section class="intro-section">
+
+            <p class="section-label">INTRODUCING AVENOR</p>
+
+            <h2>
+                Beyond Trends.<br>
+                Into Timeless Style.
+            </h2>
+
+            <p>
+                Fashion is more than what you wear.
+                It is an expression of individuality, confidence
+                and the details that make you unique.
+            </p>
+
+        </section>
+
+
+        <!-- BRAND STORY -->
+        <section class="brand-section" id="our-story">
+
+            <div class="brand-image">
+
+                <img
+                    src="assets/images/brand-story.webp"
+                    alt="AVENOR fashion editorial"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+            </div>
+
+            <div class="brand-content">
+
+                <p class="section-label">OUR PHILOSOPHY</p>
+
+                <h2>
+                    Designed for Today.<br>
+                    Inspired by Forever.
+                </h2>
+
+                <p>
+                    At AVENOR, we believe great style is never about
+                    following every trend. It is about discovering
+                    what feels authentic to you.
+                </p>
+
+                <p>
+                    Our approach brings together contemporary design,
+                    considered details and timeless inspiration.
+                </p>
+
+                <a href="collections.html" class="text-link">
+                    Discover Our Collections →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- COLLECTION PREVIEW -->
+        <section class="home-collections">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">EXPLORE AVENOR</p>
+                    <h2>Our Collections</h2>
+                </div>
+
+                <a href="collections.html" class="text-link">
+                    View All Collections →
+                </a>
+
+            </div>
+
+            <div class="collection-grid">
+
+                <a href="collections.html#men" class="collection-card">
+
+                    <img
+                        src="assets/images/men-collection-01.webp"
+                        alt="AVENOR men's collection"
+                    >
+
+                    <div class="collection-card-content">
+                        <h3>For Him</h3>
+                        <p>Discover Men's Fashion →</p>
+                    </div>
+
+                </a>
+
+
+                <a href="collections.html#women" class="collection-card">
+
+                    <img
+                        src="assets/images/women-collection-01.webp"
+                        alt="AVENOR women's collection"
+                    >
+
+                    <div class="collection-card-content">
+                        <h3>For Her</h3>
+                        <p>Discover Women's Fashion →</p>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter-section">
+
+            <p class="section-label">THE AVENOR EDIT</p>
+
+            <h2>Stay Ahead of the Ordinary.</h2>
+
+            <p>
+                Receive collection updates, style inspiration
+                and exclusive announcements.
+            </p>
+
+            <form class="newsletter-form" id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <button type="submit">Subscribe →</button>
+
+            </form>
+
+            <p id="newsletterMessage"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- SHOPPING BAG -->
+    <div class="cart-overlay" id="cartOverlay">
+
+        <div class="cart-panel">
+
+            <div class="cart-header">
+
+                <h2>Your Shopping Bag</h2>
+
+                <button id="closeCart" aria-label="Close shopping bag">
+                    &times;
+                </button>
+
+            </div>
+
+
+            <div class="cart-items" id="cartItems">
+
+                <p class="empty-cart">
+                    Your shopping bag is currently empty.
+                </p>
+
+            </div>
+
+
+            <div class="cart-footer">
+
+                <div class="cart-total">
+
+                    <span>Total</span>
+                    <span id="cartTotal">$0</span>
+
+                </div>
+
+                <button class="checkout-button" id="checkoutButton">
+                    Send Enquiry
+                </button>
+
+                <p class="cart-note">
+                    Demonstration shopping bag. No real orders or payments are processed.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo">AVENOR</a>
+
+                <p>
+                    Contemporary fashion.<br>
+                    Timeless identity.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Explore</h4>
+                    <a href="index.html">Home</a>
+                    <a href="collections.html">Collections</a>
+                </div>
+
+                <div>
+                    <h4>Discover</h4>
+                    <a href="index.html#our-story">Our Story</a>
+                    <a href="collections.html#men">Men</a>
+                    <a href="collections.html#women">Women</a>
+                </div>
+
+                <div>
+                    <h4>Information</h4>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 AVENOR. All rights reserved.</p>
+            <p>Designed with intention.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

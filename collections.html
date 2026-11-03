@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/icons/avenor-favicon.png">
+
+    <title>Collections | AVENOR</title>
+
+    <meta name="description" content="Explore the AVENOR men's and women's contemporary fashion collections.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT -->
+    <div class="announcement-bar">
+        Complimentary shipping on orders above $150
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar">
+
+            <div class="nav-left">
+                <a href="index.html">Home</a>
+                <a href="collections.html" class="active">Collections</a>
+            </div>
+
+            <a href="index.html" class="logo">AVENOR</a>
+
+            <div class="nav-right">
+                <a href="index.html#our-story">Our Story</a>
+
+                <button class="bag-button" id="cartButton">
+                    Shopping Bag (<span id="cartCount">0</span>)
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PAGE INTRO -->
+        <section class="catalogue-intro">
+
+            <p class="section-label">THE AVENOR COLLECTION</p>
+
+            <h1>Discover Your Style.</h1>
+
+            <p>
+                Contemporary essentials and timeless pieces,
+                thoughtfully selected for every expression of style.
+            </p>
+
+        </section>
+
+
+        <!-- PRODUCT FILTER & SORT -->
+        <section class="catalogue-toolbar">
+
+            <div class="catalogue-search">
+                <input
+                    type="search"
+                    id="productSearch"
+                    placeholder="Search the collection..."
+                    aria-label="Search products"
+                >
+            </div>
+
+            <div class="catalogue-sort">
+
+                <label for="sortProducts">Sort by:</label>
+
+                <select id="sortProducts">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name: A to Z</option>
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEN -->
+        <section class="products-section" id="men">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">THE MENSWEAR EDIT</p>
+                    <h2>For Him</h2>
+                </div>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/product-01.webp" alt="Powder blue cotton shirt" loading="lazy" decoding="async">
+
+                        <button class="add-to-bag"
+                            data-name="Powder Blue Cotton Shirt"
+                            data-price="89">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Powder Blue Cotton Shirt</h3>
+                        <p>Relaxed Fit · Cotton</p>
+                        <span>$89</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/product-02.webp" alt="Olive tailored trousers" loading="lazy" decoding="async">
+
+                        <button class="add-to-bag"
+                            data-name="Olive Tailored Trousers"
+                            data-price="110">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Olive Tailored Trousers</h3>
+                        <p>Modern Fit · Tailored</p>
+                        <span>$110</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/product-05.webp" alt="Terracotta knitwear" loading="lazy" decoding="async">
+
+                        <button class="add-to-bag"
+                            data-name="Terracotta Knitwear"
+                            data-price="95">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Terracotta Knitwear</h3>
+                        <p>Regular Fit · Knitwear</p>
+                        <span>$95</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/product-06.webp" alt="Navy structured jacket" loading="lazy" decoding="async">
+
+                        <button class="add-to-bag"
+                            data-name="Navy Structured Jacket"
+                            data-price="165">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Navy Structured Jacket</h3>
+                        <p>Tailored Fit · Outerwear</p>
+                        <span>$165</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- WOMEN -->
+        <section class="products-section" id="women">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">THE WOMENSWEAR EDIT</p>
+                    <h2>For Her</h2>
+                </div>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/product-03.webp" alt="Burgundy tailored blazer" loading="lazy" decoding="async">
+
+                        <button class="add-to-bag"
+                            data-name="Burgundy Tailored Blazer"
+                            data-price="145">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Burgundy Tailored Blazer</h3>
+                        <p>Structured Fit · Blazer</p>
+                        <span>$145</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/product-04.webp" alt="Chocolate midi dress" loading="lazy" decoding="async">
+
+                        <button class="add-to-bag"
+                            data-name="Chocolate Midi Dress"
+                            data-price="125">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Chocolate Midi Dress</h3>
+                        <p>Elegant Fit · Dress</p>
+                        <span>$125</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/featured-02.webp" alt="Dusty rose blouse" loading="lazy" decoding="async">
+
+                        <button class="add-to-bag"
+                            data-name="Dusty Rose Blouse"
+                            data-price="105">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Dusty Rose Blouse</h3>
+                        <p>Relaxed Fit · Blouse</p>
+                        <span>$105</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="assets/images/featured-04.webp" alt="Plum evening dress" loading="lazy" decoding="async">
+
+                        <button class="add-to-bag"
+                            data-name="Plum Evening Dress"
+                            data-price="155">
+                            Add to Bag
+                        </button>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Plum Evening Dress</h3>
+                        <p>Evening Wear · Dress</p>
+                        <span>$155</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- FEATURED DETAILS -->
+        <section class="featured-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">THE FINER DETAILS</p>
+                    <h2>Crafted to Be Noticed.</h2>
+                </div>
+            </div>
+
+            <div class="featured-grid">
+
+                <div class="featured-card">
+                    <img src="assets/images/detail-01.webp" alt="Powder blue cotton fabric detail">
+                    <h3>Considered Textures</h3>
+                </div>
+
+                <div class="featured-card">
+                    <img src="assets/images/detail-02.webp" alt="Olive tailored trousers detail">
+                    <h3>Refined Construction</h3>
+                </div>
+
+                <div class="featured-card">
+                    <img src="assets/images/detail-03.webp" alt="Burgundy blazer detail">
+                    <h3>Thoughtful Details</h3>
+                </div>
+
+                <div class="featured-card">
+                    <img src="assets/images/detail-04.webp" alt="Chocolate brown dress detail">
+                    <h3>Timeless Finishes</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- SHOPPING BAG -->
+    <div class="cart-overlay" id="cartOverlay">
+
+        <div class="cart-panel">
+
+            <div class="cart-header">
+                <h2>Your Shopping Bag</h2>
+                <button id="closeCart" aria-label="Close shopping bag">&times;</button>
+            </div>
+
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your shopping bag is currently empty.</p>
+            </div>
+
+            <div class="cart-footer">
+
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span id="cartTotal">$0</span>
+                </div>
+
+                <button class="checkout-button" id="checkoutButton">
+                    Send Enquiry
+                </button>
+
+                <p class="cart-note">
+                    Demonstration shopping bag. No real orders or payments are processed.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">AVENOR</a>
+                <p>Contemporary fashion.<br>Timeless identity.</p>
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Explore</h4>
+                    <a href="index.html">Home</a>
+                    <a href="collections.html">Collections</a>
+                </div>
+
+                <div>
+                    <h4>Collections</h4>
+                    <a href="#men">Men</a>
+                    <a href="#women">Women</a>
+                </div>
+
+                <div>
+                    <h4>Information</h4>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 AVENOR. All rights reserved.</p>
+            <p>Designed with intention.</p>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
